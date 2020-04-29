@@ -1,6 +1,16 @@
 
 const {dest, src, watch, parallel} = require('gulp'),
-       sass = require('gulp-sass')
+       sass = require('gulp-sass'),
+       browserSync = require('browser-sync').create()
+       
+
+function server() {
+  browserSync.init({
+    server: {
+      baseDir: './public'
+    }
+  })
+}  
        
     
 function html() {
@@ -15,6 +25,7 @@ function styles() {
           outputStyle: 'compressed'
         }))
         .pipe(dest('./public/'))
+        .pipe(browserSync.stream())
 }
 
 
@@ -30,6 +41,7 @@ exports.assets = assets
 exports.build = parallel(assets, html, styles)
 
 exports.default = () => {
-  watch('./src/index.html', html)
+  server()
+  watch('./src/index.html', html).on('change', browserSync.reload)
   watch('./src/scss**/*.scss', styles)
 }
