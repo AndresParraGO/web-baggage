@@ -1,8 +1,21 @@
 {
   "name": "baggage-design",
   "version": "1.0.0",
-  "keywords": ["util", "functional", "server", "client", "browser"],
+  "keywords": [
+    "Web Design"
+  ],
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "styles": "gulp styles",
+    "assets": "gulp assets"
+  },
   "author": "AndresParraGO",
   "contributors": [],
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.1.0"
+  }
 }
