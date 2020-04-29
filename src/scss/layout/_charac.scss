@@ -1,0 +1,33 @@
+
+
+.section-characteristics {
+  .container {
+    
+    @include m {
+      display: flex;
+    }
+
+  }
+}
+
+
+
+.characterist {
+  text-align: center;
+
+  @include s {
+    border-bottom: 1px solid rgba(#000, .16);
+    padding-bottom: 2em;
+  }
+
+
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1em;
+  }
+
+  p {
+    color: $textColor;
+  }
+}

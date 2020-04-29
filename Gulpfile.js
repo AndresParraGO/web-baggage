@@ -43,5 +43,5 @@ exports.build = parallel(assets, html, styles)
 exports.default = () => {
   server()
   watch('./src/index.html', html).on('change', browserSync.reload)
-  watch('./src/scss**/*.scss', styles)
+  watch('./src/scss/**/*.scss', styles)
 }

@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baggage</title>
+
+  <script src="https://kit.fontawesome.com/e1a46ff2e2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <section class="section-header">
-    <header class="header"></header>
+    <header class="header">
       <div class="container">
-        <div>
+        <div class="header__up">
           <div class="header__logo">
             <h1>Baggege</h1>
             <span>Online Store</span>
@@ -21,10 +24,11 @@
           </div>
         </div>
   
-        <div>
+        <div class="header__down">
           <nav class="header__nav">
+            <span class="fas fa-bars"></span>
             <ul class="header__nav__menu">
-              <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="#" class="menu__link active">Home</a></li>
               <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Dropdown</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Collections</a></li> 
@@ -40,29 +44,31 @@
     </header>
 
     <div class="banner">
-      <div class="banner__text">
-        <h2 class="banner__text__title">
-          <span>The Largest Range</span>
-          <span>Of Handbags</span>
-        </h2>
-
-        <a href="#" class="btn banner__text__btn">Shop Now</a>
+      <div class="container">
+        <div class="banner__text">
+          <h2 class="banner__text__title">
+            <span>The Largest Range</span>
+            <span>Of Handbags</span>
+          </h2>
+        
+          <a href="#" class="btn banner__text__btn">Shop Now</a>
+        </div>
+        <img src="bags.png" alt="Bags" class="banner__img">
       </div>
-      <img src="bags.png" alt="Bags" class="banner__img">
     </div>
   </section>
 
-  <section class="section-characteristics">
+  <section class="section section-characteristics">
     <div class="container">
-      <div>
+      <div class="characterist">
         <h4>Fast & Free Delivery</h4>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ullam tempora modi ut.</p>
       </div>
-      <div>
+      <div class="characterist">
         <h4>Safe & Secure Payments</h4>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ullam tempora modi ut.</p>
       </div>
-      <div>
+      <div class="characterist">
         <h4>100% Money back guarantee</h4>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ullam tempora modi ut.</p>
       </div>
@@ -70,7 +76,7 @@
   </section>
 
 
-  <section class="section-travel">
+  <section class="section section-travel">
     <div class="travel__img">
       <img src="woman-bag.jpg" alt="Woman with Bag">
     </div>
@@ -83,20 +89,22 @@
 
 
 
-  <section class="section-safety">
+  <section class="section section-safety">
     <div class="container">
-      <h4>Safety meets style</h4>
+      <h4 class="safety__title">Safety meets style</h4>
 
-      <div>
-        <div>
+      <div class="safety__card">
+        <div class="safety__card__img">
           <img src="backpack.jpg" alt="backpack">
         </div>
-        <div>
+
+        <div class="safety__card__text">
           <h5>Need Extra Space ?</h5>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident cum dicta ipsa aperiam ab ut.</p>
           <a href="#" class="btn">Shop Now</a>
         </div>
-        <div>
+
+        <div class="safety__card__img">
           <img src="woman-bag2.jpg" alt="Woman with bag">
         </div>
       </div>
@@ -104,7 +112,7 @@
   </section>
 
 
-  <section class="section-oferts">
+  <section class="section section-oferts">
     <div class="ofert">
       <div class="ofert__text">
         <h6>50% Off Any Women´s Bags</h6>
@@ -121,7 +129,7 @@
   </section>
 
 
-  <section class="section-trending">
+  <section class="section section-trending">
     <div class="container">
       <div class="trending__text">
         <h5 class="trending__text__title">Trending Now</h5>
@@ -142,7 +150,7 @@
 
 
 
-  <section class="subscribe">
+  <section class="section subscribe">
     <p class="subscribe__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure provident nobis ut possimus delectus ipsa praesentium distinctio accusantium, omnis eveniet.</p>
     <div class="subscribe__email">
       <input type="text" placeholder="Enter Your Email..">

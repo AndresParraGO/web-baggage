@@ -1,0 +1,16 @@
+
+
+// Mobile
+@mixin s {
+  @media screen and (max-width: 768px) {@content;}
+}
+
+// Table
+@mixin m {
+  @media screen and (min-width: 769px) {@content;}
+}
+
+// Desktop
+@mixin l {
+  @media screen and (min-width: 1024px) {@content;}
+}
