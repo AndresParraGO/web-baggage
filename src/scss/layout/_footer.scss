@@ -1,0 +1,44 @@
+
+.footer__content {
+  
+  @include s {
+    text-align: center;
+
+    div {
+      margin-bottom: 2em;
+    }
+  }
+
+  @include m {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.footer__media {
+  text-align: center;
+  padding: 3em 0;
+
+  h5 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+
+
+    p {
+      padding: 0 1em;
+    }
+  }
+}
+
+
+.footer__copy {
+  background-color: $bgColorAlt;
+  padding: 1em;
+  text-align: center;
+}

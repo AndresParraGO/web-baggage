@@ -1,0 +1,47 @@
+
+
+.section-subscribe {
+  background-color: $bgColorAlt;
+  text-align: center;
+  padding: 3em 2em;
+}
+
+
+.subscribe__email {
+  margin-top: 1em;
+  width: 100%;  
+
+  display: flex;
+  justify-content: space-around;
+
+  @include s {
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .btn {
+    width: 200px;
+
+    @include s {
+      margin-top: 1em;
+    }
+  }
+
+  input {
+    width: 70%;
+    height: 40px;
+    padding: 0 1em;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 3px 0 rgba(#000, .25)
+  }
+
+
+
+}
+
+
+.subscribe__text {
+  color: $textColor;
+}
