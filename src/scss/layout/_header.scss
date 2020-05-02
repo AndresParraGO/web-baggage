@@ -62,6 +62,18 @@
 }
 
 
+.header__sign {
+  a {
+    padding-left: 1em;
+  }
+
+  a .fas {
+    color: $textColorAlt;
+    padding-right: .3em;
+    font-size: .8em;
+  }
+}
+
 
 // ==============  NAV ==============
 
@@ -78,6 +90,12 @@
 
 
 .header__nav__menu {
+  
+  .fas {
+    color: $textColorAlt;
+    padding-left: .2em;
+  }
+
 
   @include s {
     display: none;
